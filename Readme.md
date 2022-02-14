@@ -40,11 +40,11 @@ The company wants to know:
 - Ridge and Lasso both have good R2 value
 - We can choose Lasso as it also helps in feature selection
 - Most important predictor for Lasso
-		- GrLivArea
-		- Neighborhood_NoRidge
-		- OverallQual
-		- Neighborhood_NridgHt
-		- BsmtExposure_Gd
+	- GrLivArea
+	- Neighborhood_NoRidge
+	- OverallQual
+	- Neighborhood_NridgHt
+	- BsmtExposure_Gd
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
