@@ -1,0 +1,38 @@
+1. What is the optimal value of alpha for ridge and lasso regression? What will be the changes in the model if you choose double the value of alpha for both ridge and lasso? What will be the most important predictor variables after the change is implemented?
+Ans : 	Optimal value for Ridge : 50
+		Optimal value for Lasso : 100
+		
+	If the values of the alpha are doubled, the model will fail to address the overfitting issue
+	
+	Most important predictor for Ridge
+		OverallQual
+		GrLivArea
+		BsmtQual_Gd	
+		Neighborhood_NoRidge
+		2ndFlrSF
+		
+	Most important predictor for Lasso
+		GrLivArea
+		Neighborhood_NoRidge
+		OverallQual
+		Neighborhood_NridgHt
+		BsmtExposure_Gd
+		
+			
+		
+2. You have determined the optimal value of lambda for ridge and lasso regression during the assignment. Now, which one will you choose to apply and why?
+	
+Ans : I would go with Lasso Regression. I chose Lasso regression as the r2 value for both test and the train set are high. Lasso can also help in choosing or eliminating the features.
+
+3. After building the model, you realised that the five most important predictor variables in the lasso model are not available in the incoming data. You will now have to create another model excluding the five most important predictor variables. Which are the five most important predictor variables now?
+Ans :	The top 5 important predictor variables after rebuilding the model are :
+	
+	PoolQC_Gd
+	Condition2_PosN
+	2ndFlrSF
+	BsmtQual_Gd
+	KitchenQual_Gd
+	
+4. How can you make sure that a model is robust and generalisable? What are the implications of the same for the accuracy of the model and why?
+Ans: To make the model robust we have to choose features which are the most important predictor. To make the model generalisable, we have to test the model with K-fold validation, so that with the same data, we can buid the model for different Train and Test data set. 
+The accuracy of the model will increase as we build and test the model different Train and Test data. 
